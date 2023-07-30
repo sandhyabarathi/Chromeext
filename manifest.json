@@ -1,0 +1,15 @@
+{
+    "manifest_version":3,
+    "name":"hello",
+    "version":"1.0",
+    "description":"Get the informations from the url",
+    "permissions":["scripting","tabs"],
+    "action":{
+        "default_popup":"popup.html"
+    },
+    "background":{
+        "service_worker":"./backgroundPage.js"
+    },
+
+    "host_permissions":["<all_urls>"]
+}
